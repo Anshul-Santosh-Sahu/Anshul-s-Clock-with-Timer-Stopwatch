@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: royalblue;
+    min-height: 100vh;
+    min-width: 100vw;
+    background: darkcyan;
+}
+
+/* CSS variable */
+:root {
+    --primary-color4: #000000;
+    --secondary-color: #0c0c0c;
+    --primary-color2: #3c3f3f;
+
+    --primary-color: #4458dc;
+    --primary-color3: #99FF66;
+    --title-color: #141313;
+    --text-color: #777777;
+    --border-color: #201f1f17;
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
+    --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+
+    /* font family variable */
+    /* --roboto:'Roboto',cursive; */
+}
+
+/* Style for code blocks */
+pre {
+    background-color: #f0f0f0f0; /* Light grey background */
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* Adds horizontal scroll for long code */
+    color: #fff0f0; /* Black text color */
+}
+
+/* Style for inline code */
+code {
+    background-color: #f0f0f0; /* Light grey background */
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #000000; /* Black text color */
+}

@@ -1,0 +1,368 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+
+/* import Css variable */
+/* @import url("C:\Users\ankus\OneDrive\Pictures\Screenshots\ANSHUL\web dev skillcraft\variable.css"); */
+
+/* Add to your existing CSS */
+/* Add this to your existing CSS */
+body {
+  background-image: url('digitalclock.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.header, .outer_wrapper {
+  background-color: rgba(0, 0, 0, 0.6); /* Adds transparency */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.outer_wrapper {
+  margin-top: 20px; /* Add some spacing between the header and the clock area */
+}
+
+h1, .type, .text {
+  color: #ffffff;
+  text-align: center; /* Center-align the text */
+}
+
+.clock {
+  display: flex;
+  justify-content: center; /* Center-align the clock components */
+  align-items: center;
+}
+
+.clock > div {
+  text-align: center;
+}
+
+.colon {
+  padding: 0 5px;
+}
+
+.btn, .btnss {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+
+.outer_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 20px; /* Space between title and clock box */
+}
+
+.Container {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 10px;
+  color: #fff4f4;
+  background-color: rgb(22, 5, 5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  padding: 20px;
+  text-align: center;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.clock div {
+  width: 20%;
+  text-align: center;
+}
+
+.number {
+  font-size: 50px;
+  color: #000000;
+  font-family: "Orbitron", sans-serif;
+}
+
+.colon {
+  font-size: 30px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #000000;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: rgb(255, 255, 255);
+  box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.type {
+  padding: 5px 30px;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.header {
+  padding: 10px 50px;
+  margin: 10px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+span {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+}
+
+.stopWatch {
+  padding: 30px 0;
+  border-radius: 10px;
+  background: rgba(8, 7, 7);
+  box-shadow: 0 8px 32px 0 rgba(56, 69, 251, 0.56);
+  border: 1px solid rgba(255, 255, 255, 0.297);
+  margin-top: 10px;
+  text-align: center;
+  transition: all 0.3s;
+}
+
+.stopWatch:hover {
+  box-shadow: none;
+}
+
+.digits {
+  text-align: center;
+  font-size: 50px;
+  color: #ffffff;
+  font-family: "Orbitron", sans-serif;
+}
+
+.text {
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+#count {
+  position: relative;
+  top: -50px;
+  left: 30px;
+  font-size: 15px;
+}
+
+#btns {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: rgb(8, 7, 7);
+  box-shadow: 0 8px 32px 0 rgba(44, 57, 252, 0.401);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn:active {
+  box-shadow: none;
+}
+
+.laps {
+  position: relative;
+  max-height: 100px;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.laps .lap {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 10px;
+  background: rgba(8, 7, 7);
+  box-shadow: 0 8px 32px 0 rgba(44, 57, 252, 0.401);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.laps .lap.active p {
+  color: #9af545;
+  font-weight: 800;
+}
+
+.wrapper {
+  border-radius: 10px;
+  background: rgba(8, 7, 7);
+  box-shadow: 0 8px 32px 0 rgba(44, 57, 252, 0.401);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 15px;
+  text-align: center;
+  transition: all 0.3s;
+  line-height: 0.1;
+}
+
+.wrapper:hover {
+  box-shadow: none;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.clock div {
+  width: 20%;
+  text-align: center;
+}
+
+.number {
+  font-size: 50px;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+}
+
+.colon {
+  font-size: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+.clock_style {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  row-gap: 10px;
+  column-gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .digits {
+    font-size: 50px;
+  }
+  .text {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .stopWatch {
+    padding: 30px;
+    margin: 50px;
+  }
+
+  .wrapper {
+    padding: 15px;
+    margin: 50px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .header {
+    padding: unset;
+  }
+  h1 {
+    font-size: 9px;
+  }
+
+  span {
+    font-size: 11px;
+  }
+  .stopWatch {
+    padding: 15px;
+    margin: 26px;
+  }
+
+  .wrapper {
+    padding: 10px;
+    margin: 26px;
+  }
+
+  .clock {
+    gap: 3px;
+  }
+
+  .digits {
+    font-size: 25px;
+  }
+
+  .text {
+    font-size: 8px;
+  }
+
+  #count {
+    display: none;
+  }
+
+  .btn {
+    padding: 8px 10px;
+  }
+
+  .clock .number {
+    font-size: 20px;
+  }
+}
+
+.btnss{
+  display: flex;
+  flex-direction: row;
+}
