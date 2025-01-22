@@ -1,1 +1,1 @@
-# SCT_WD_2
+# Clock with Timer and Stopwatch
